@@ -21,18 +21,8 @@ end
 end
 
 20.times do
-    Tutor.create!(
+    User.create!(
         name: 'John Smith',
-        email: 'JohnS@iastate.edu',
-        password_digest: 'asd123',
-        year: 'sophmore',
-        major: 'architect',
-    )
-end
-
-20.times do
-    Student.create!(
-        name: 'John Jacob',
         email: 'JohnS@iastate.edu',
         password_digest: 'asd123',
         year: 'sophmore',
@@ -43,5 +33,4 @@ end
 puts "Seed Finished"
 puts "#{Test.count} Users created"
 puts "#{Course.count} Courses created"
-puts "#{Tutor.count} Tutors created"
-puts "#{Student.count} Students created"
+puts "#{User.count} Users created"
